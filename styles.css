@@ -1,80 +1,82 @@
-body{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	background-color: #24272E
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #24272e;
 }
 
-.title{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #2d716b;
-	text-transform: uppercase;
-	font-family: "Comic Sans MS",cursive;
-	font-size: 100px;
-	display: block;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-td{
-	border:2px solid #333;
-	height: 100px;
-	width: 100px;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 70px;
-	cursor: pointer;
-	font-family: "Comic Sans MS",cursive;
-	border-color: #fff;
-	color: #fff;
-
+.title {
+  color: #2d716b;
+  text-transform: uppercase;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 100px;
+  margin-top: 0;
 }
 
-table{
-	border-collapse: collapse;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-
+td {
+  border: 2px solid #333;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 70px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive;
+  border-color: #fff;
+  color: #fff;
 }
 
-table tr:first-child td{
-	border-top: 0;
+table {
+  border-collapse: collapse;
 }
 
-table tr:last-child td{
-	border-bottom: 0;
+table tr:first-child td {
+  border-top: 0;
 }
 
-table tr td:first-child{
-	border-left: 0;
-}
-table tr td:last-child{
-	border-right: 0;
+table tr:last-child td {
+  border-bottom: 0;
 }
 
-.endgame{
-	display: none;
-	position: absolute;
-	width: 200px;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background-color: rgba(205,133,63, 0.8);
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
-	color: white;
-	border-right: 5px;
-	font-size: 2em;
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
 }
 
-.replay{
-	position: absolute;
-	left: 50%;
-	top: 80%;
-	transform: translate(-50%,-50%);
-	font-size: 30px;
-	font-family: "Comic Sans MS",cursive;
+.endgame {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(205, 133, 63, 0.8);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  border-right: 5px;
+  font-size: 2em;
+}
+
+.replay {
+  font-size: 30px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .cell {
+    height: 200px;
+    width: 200px;
+  }
 }
